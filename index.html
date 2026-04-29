@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lomane Perfumes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header" id="home">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="brand" href="#home" aria-label="Lomane home">
+                <span class="brand-mark">L</span>
+                <span>Lomane</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a class="nav-action" href="#products">Explore</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <p class="eyebrow">Premium aqua fragrance collection</p>
+                <h1 id="hero-title">Fresh scents for every bold moment.</h1>
+                <p class="hero-copy">
+                    Discover crisp marine perfumes with cool citrus, clean woods, and long-lasting freshness.
+                </p>
+                <div class="hero-actions">
+                    <a class="primary-btn" href="#products">Shop Collection</a>
+                    <a class="secondary-btn" href="#about">Our Story</a>
+                </div>
+                <div class="hero-stats" aria-label="Store highlights">
+                    <div>
+                        <strong>24h</strong>
+                        <span>Fresh wear</span>
+                    </div>
+                    <div>
+                        <strong>3</strong>
+                        <span>Signature picks</span>
+                    </div>
+                    <div>
+                        <strong>4.9</strong>
+                        <span>Customer rating</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-showcase" aria-label="Featured Lomane perfume">
+                <img src="perfume1.png" alt="Wild Stone blue perfume bottle">
+                <div class="floating-note top">Ocean energy</div>
+                <div class="floating-note bottom">Citrus woods</div>
+            </div>
+        </section>
+
+        <section class="search-section" aria-labelledby="search-title">
+            <div class="section-heading compact">
+                <p class="eyebrow">Find your note</p>
+                <h2 id="search-title">Search the collection</h2>
+            </div>
+            <label class="searchbar">
+                <span class="search-icon" aria-hidden="true">&#8981;</span>
+                <input id="productSearch" type="search" placeholder="Search by name, mood, or note..." autocomplete="off">
+            </label>
+        </section>
+
+        <section class="products-section" id="products" aria-labelledby="products-title">
+            <div class="section-heading">
+                <p class="eyebrow">Best sellers</p>
+                <h2 id="products-title">Choose your signature</h2>
+                <p>Three modern aquatic perfumes designed for fresh days, evening plans, and everything between.</p>
+            </div>
+
+            <div class="products" id="productGrid">
+                <article class="product-card" data-name="wild stone aqua energy citrus woods ocean">
+                    <button class="favorite" type="button" aria-label="Add Wild Stone to wishlist" aria-pressed="false">&#9825;</button>
+                    <figure>
+                        <img src="perfume1.png" alt="Wild Stone blue Eau de Parfum bottle">
+                    </figure>
+                    <div class="product-info">
+                        <p class="tag">Eau de Parfum</p>
+                        <h3>Wild Stone Aqua</h3>
+                        <p>Bright ocean notes, fresh mint, and clean woods for a confident daytime trail.</p>
+                        <div class="product-meta">
+                            <span>100 ml</span>
+                            <strong>&#8377;899</strong>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card featured" data-name="men in blue next marine amber fresh">
+                    <button class="favorite" type="button" aria-label="Add Men in Blue to wishlist" aria-pressed="false">&#9825;</button>
+                    <figure>
+                        <img src="perfume2.png" alt="Men in Blue Eau de Parfum bottle">
+                    </figure>
+                    <div class="product-info">
+                        <p class="tag">Customer favorite</p>
+                        <h3>Men In Blue</h3>
+                        <p>Cool marine freshness balanced with amber depth for polished evening wear.</p>
+                        <div class="product-meta">
+                            <span>100 ml</span>
+                            <strong>&#8377;1,199</strong>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-name="cool water aquatic fresh airy blue">
+                    <button class="favorite" type="button" aria-label="Add Cool Water to wishlist" aria-pressed="false">&#9825;</button>
+                    <figure>
+                        <img src="perfume3.png" alt="Cool Water aquatic perfume packaging">
+                    </figure>
+                    <div class="product-info">
+                        <p class="tag">Aquatic fresh</p>
+                        <h3>Cool Water</h3>
+                        <p>Airy aquatic accords with a clean blue finish that feels effortless and refreshing.</p>
+                        <div class="product-meta">
+                            <span>75 ml</span>
+                            <strong>&#8377;749</strong>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <p class="empty-state" id="emptyState" hidden>No perfumes match your search.</p>
+        </section>
+
+        <section class="aboutus" id="about" aria-labelledby="about-title">
+            <div>
+                <p class="eyebrow">About us</p>
+                <h2 id="about-title">Crafted for freshness that stays with you.</h2>
+            </div>
+            <p>
+                Lomane curates bold, modern fragrances inspired by blue water, crisp air, and clean confidence.
+                Every scent in this collection is selected for everyday comfort, strong first impressions, and
+                a refined finish that feels premium without becoming heavy.
+            </p>
+        </section>
+    </main>
+
+    <footer class="contact" id="contact">
+        <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Ready to smell unforgettable?</h2>
+        </div>
+        <address>
+            <a href="mailto:lomane@gmail.com">lomane@gmail.com</a>
+        </address>
+        <p>Free delivery on orders above &#8377;999. Fresh arrivals drop every Friday.</p>
+    </footer>
+
+    <script>
+        const searchInput = document.querySelector("#productSearch");
+        const productCards = document.querySelectorAll(".product-card");
+        const emptyState = document.querySelector("#emptyState");
+
+        searchInput.addEventListener("input", () => {
+            const query = searchInput.value.trim().toLowerCase();
+            let visibleCount = 0;
+
+            productCards.forEach((card) => {
+                const isMatch = card.dataset.name.includes(query);
+                card.hidden = !isMatch;
+                if (isMatch) visibleCount += 1;
+            });
+
+            emptyState.hidden = visibleCount !== 0;
+        });
+
+        document.querySelectorAll(".favorite").forEach((button) => {
+            button.addEventListener("click", () => {
+                const isSelected = button.classList.toggle("selected");
+                button.textContent = isSelected ? "\u2665" : "\u2661";
+                button.setAttribute("aria-pressed", String(isSelected));
+            });
+        });
+    </script>
+</body>
+</html>
